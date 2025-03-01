@@ -3,8 +3,8 @@
 ### This repository contains datasets from Google's BigQuery public datasets, each corresponding to a specific cryptocurrency. These datasets provide comprehensive blockchain data, enabling analysis of transactions, smart contracts, and other on-chain activities.
 
 
-Dataset Name|Cryptocurrency|Description|
-crypto_aptos_mainnet_us|Aptos (APT)|A scalable Layer 1 blockchain known for its high transaction throughput and focus on user experience.|
+Dataset Name | Cryptocurrency | Description |
+crypto_aptos_mainnet_us | Aptos (APT) | A scalable Layer 1 blockchain known for its high transaction throughput and focus on user experience. |
 crypto_zilliqa|Zilliqa (ZIL)|A blockchain platform utilizing sharding technology to achieve high scalability and secure decentralized applications.|
 crypto_tezos|Tezos (XTZ)|A self-amending blockchain that facilitates formal verification and decentralized governance for smart contracts and decentralized applications.|
 crypto_ethereum|Ethereum (ETH)|A decentralized platform enabling smart contracts and decentralized applications (dApps) to run without downtime or third-party interference.|
