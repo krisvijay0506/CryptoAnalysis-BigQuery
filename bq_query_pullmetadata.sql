@@ -60,16 +60,6 @@ SELECT DISTINCT field_path,column_name,data_type,description
 FROM `bigquery-public-data.crypto_litecoin.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS`
 WHERE data_type IN ('STRING','INT64','BOOL','STRING','TIMESTAMP','NUMERIC','ARRAY<STRING>','BIGNUMERIC','DATE','DATETIME','TIME','FLOAT64')
 UNION ALL
--- crypto_multiversx_mainnet_eu --
-SELECT DISTINCT field_path,column_name,data_type,description
-FROM `bigquery-public-data.crypto_multiversx_mainnet_eu.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS`
-WHERE data_type IN ('STRING','INT64','BOOL','STRING','TIMESTAMP','NUMERIC','ARRAY<STRING>','BIGNUMERIC','DATE','DATETIME','TIME','FLOAT64')
-UNION ALL
--- crypto_near_mainnet_us --
-SELECT DISTINCT field_path,column_name,data_type,description
-FROM `bigquery-public-data.crypto_near_mainnet_us.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS`
-WHERE data_type IN ('STRING','INT64','BOOL','STRING','TIMESTAMP','NUMERIC','ARRAY<STRING>','BIGNUMERIC','DATE','DATETIME','TIME','FLOAT64')
-UNION ALL
 -- crypto_polkadot --
 SELECT DISTINCT field_path,column_name,data_type,description
 FROM `bigquery-public-data.crypto_polkadot.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS`
@@ -78,11 +68,6 @@ UNION ALL
 -- crypto_polygon --
 SELECT DISTINCT field_path,column_name,data_type,description
 FROM `bigquery-public-data.crypto_polygon.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS`
-WHERE data_type IN ('STRING','INT64','BOOL','STRING','TIMESTAMP','NUMERIC','ARRAY<STRING>','BIGNUMERIC','DATE','DATETIME','TIME','FLOAT64')
-UNION ALL
--- crypto_solana_mainnet_us --
-SELECT DISTINCT field_path,column_name,data_type,description
-FROM `bigquery-public-data.crypto_solana_mainnet_us.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS`
 WHERE data_type IN ('STRING','INT64','BOOL','STRING','TIMESTAMP','NUMERIC','ARRAY<STRING>','BIGNUMERIC','DATE','DATETIME','TIME','FLOAT64')
 UNION ALL
 -- crypto_sui_mainnet_us --
@@ -108,6 +93,22 @@ UNION ALL
 -- crypto_zilliqa --
 SELECT DISTINCT field_path,column_name,data_type,description
 FROM `bigquery-public-data.crypto_zilliqa.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS`
+WHERE data_type IN ('STRING','INT64','BOOL','STRING','TIMESTAMP','NUMERIC','ARRAY<STRING>','BIGNUMERIC','DATE','DATETIME','TIME','FLOAT64')
+
+----------Datasets with INFORMATION SCHEMA NOT WORKING AS EXPECTED -------------------------
+-- crypto_multiversx_mainnet_eu --
+SELECT DISTINCT field_path,column_name,data_type,description
+FROM `bigquery-public-data.crypto_multiversx_mainnet_eu.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS`
+WHERE data_type IN ('STRING','INT64','BOOL','STRING','TIMESTAMP','NUMERIC','ARRAY<STRING>','BIGNUMERIC','DATE','DATETIME','TIME','FLOAT64')
+UNION ALL
+-- crypto_near_mainnet_us --
+SELECT DISTINCT field_path,column_name,data_type,description
+FROM `bigquery-public-data.crypto_near_mainnet_us.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS`
+WHERE data_type IN ('STRING','INT64','BOOL','STRING','TIMESTAMP','NUMERIC','ARRAY<STRING>','BIGNUMERIC','DATE','DATETIME','TIME','FLOAT64')
+UNION ALL
+-- crypto_solana_mainnet_us --
+SELECT DISTINCT field_path,column_name,data_type,description
+FROM `bigquery-public-data.crypto_solana_mainnet_us.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS`
 WHERE data_type IN ('STRING','INT64','BOOL','STRING','TIMESTAMP','NUMERIC','ARRAY<STRING>','BIGNUMERIC','DATE','DATETIME','TIME','FLOAT64')
 
 
